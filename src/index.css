@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap');
+@import "tailwindcss";
+
+@theme {
+  /* Minimal SaaS Theme */
+  --color-primary: #0f172a; /* Slate 900 */
+  --color-primary-container: #e2e8f0;
+  --color-on-primary: #ffffff;
+  
+  --color-secondary: #334155;
+  --color-secondary-container: #f1f5f9;
+  --color-on-secondary: #ffffff;
+  --color-on-secondary-container: #0f172a;
+  
+  --color-surface: #ffffff;
+  --color-surface-variant: #f1f5f9;
+  --color-surface-container: #f8fafc;
+  --color-surface-container-low: #f8fafc;
+  --color-surface-container-high: #f1f5f9;
+  --color-surface-bright: #ffffff;
+  
+  --color-background: #f8fafc;
+  --color-on-background: #0f172a;
+  --color-on-surface: #0f172a;
+  --color-on-surface-variant: #475569;
+  
+  --color-outline: #cbd5e1;
+  --color-outline-variant: #e2e8f0;
+  
+  --color-error: #ef4444;
+  --color-on-error: #ffffff;
+  --color-error-container: #fee2e2;
+
+  --font-headline: "Inter", system-ui, sans-serif;
+  --font-display: "Inter", system-ui, sans-serif;
+  --font-body: "Inter", system-ui, sans-serif;
+  --font-label: "Inter", system-ui, sans-serif;
+  --font-sans: "Inter", system-ui, sans-serif;
+  --font-serif: "Inter", system-ui, sans-serif;
+
+  /* Accent specific */
+  --color-accent: #0f172a;
+  --color-accent-hover: #1e293b;
+}
+
+@layer base {
+  body {
+    @apply bg-background text-on-background antialiased;
+    font-family: var(--font-body);
+    font-weight: 400;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-headline);
+    @apply font-semibold tracking-tight;
+  }
+
+  ::selection {
+    background-color: rgba(15, 23, 42, 0.1);
+    color: var(--color-on-background);
+  }
+
+  .material-symbols-outlined {
+    font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "name": "Remix: StudyFlow AI",
+  "description": "An AI-powered study assistant with QR-based login, routine management, and real-time admin monitoring.",
+  "requestFramePermissions": [
+    "camera"
+  ],
+  "majorCapabilities": [
+    "AI Assistant",
+    "QR Authentication",
+    "Study Analytics"
+  ]
+}
